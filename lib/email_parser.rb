@@ -7,10 +7,8 @@ class EmailAddressParser
   end
   
   def parse 
-    email.split.collect do |e| e.split(",")
+    email.split.map do |e| e.split(",")
     end.flatten.uniq
   end
 
-  
-  
 end
